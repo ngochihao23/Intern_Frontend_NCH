@@ -1,0 +1,57 @@
+/* Custom CSS bổ sung cho đẹp hơn */
+
+/* Card bo tròn + shadow mềm */
+.user-card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300;
+}
+
+/* Avatar tròn nổi bật */
+.user-avatar {
+    @apply w-14 h-14 flex items-center justify-center rounded-full font-bold text-white text-lg shadow-md;
+}
+
+/* Header card */
+.user-card-header {
+    @apply flex flex-col items-center justify-center text-center pb-3 border-b;
+}
+
+/* Tên user */
+.user-name {
+    @apply mt-2 text-lg font-semibold text-gray-800;
+}
+
+/* Email/Phone/Website */
+.user-info {
+    @apply text-sm text-gray-500 mt-1;
+}
+
+/* Buttons */
+.btn {
+    @apply px-4 py-2 rounded-lg font-medium transition;
+}
+
+.btn-edit {
+    @apply bg-yellow-400 text-white hover:bg-yellow-500;
+}
+
+.btn-delete {
+    @apply bg-red-500 text-white hover:bg-red-600;
+}
+
+.btn-add {
+    @apply bg-green-500 text-white hover:bg-green-600;
+}
+
+.btn-update {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+/* Form input */
+.form-input {
+    @apply border rounded-lg px-3 py-2 focus:ring focus:ring-blue-200 focus:outline-none;
+}
+@media (max-width: 768px) {
+    .user-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
